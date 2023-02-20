@@ -4,6 +4,44 @@
     margin: 0;
 }
 
+/* header placeholder*/ 
+header {
+    height: 100px;
+    width: 100%;
+}
+
 .container {
+    width: 100%;
+    height: 100vh;
     display: grid;
+    background-color: #E0FFDC;
+    gap: 10px;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.item {
+    overflow: hidden;
+    position: relative;
+}
+
+.text {
+    grid-area: 1/2/2/3;
+    border: 1px solid black;
+}
+
+.moon {
+    grid-area: 2/1/3/2;
+    border: 1px solid black;
+}
+
+.stars {
+    grid-area: 2/2/3/3;
+    border: 1px solid black;
+}
+
+.planets {
+    grid-area: 2/3/3/4;
+    border: 1px solid black;
 }
