@@ -53,6 +53,12 @@ header {
 }
 
 /* item gallery menu */
+.item img {
+    width: 100%;
+    height: 100%;
+}
+
+
 .moon {
     grid-area: 2/1/3/2;
     border: 1px solid black;
