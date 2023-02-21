@@ -59,12 +59,19 @@ header {
     height: 100vh;
 }
 
+.gallery__moon,
+.gallery__stars,
+.gallery__planets {
+    width: 33%;
+}
+
 .gallery img {
-    width: 450px;
+    width: 100%;
     height: 360px;
     object-fit: cover;
     border-radius: 10px;
     position: relative;
+    border: 1px solid black;
 }
 
 .gallery figcaption {
@@ -77,6 +84,6 @@ header {
     color: #7BA376;
     text-transform: uppercase;
     position: absolute;
-    bottom: 0;
+    top: 570px;
     margin-left: 20px;
 }
