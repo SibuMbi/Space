@@ -18,15 +18,21 @@ header {
 
 
 /* TEXT */
+.container {
+    width: 33%;
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+}
+
 .text {
     width: 200px;
-    height: 250px;
-
+    height: 175px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     color: #7BA376;
-    margin: auto;
+    margin-left: 50px;
 }
 
 .text h2 {
@@ -45,7 +51,7 @@ header {
 }
 
 /* IMAGE LINKS */
-.container {
+.gallery {
     display: flex;
     margin: 10px;
     gap: 10px;
@@ -59,7 +65,6 @@ header {
     object-fit: cover;
     border-radius: 10px;
     position: relative;
-
 }
 
 .gallery figcaption {
