@@ -11,13 +11,11 @@ body {
 /* HEADER PLACEHOLDER*/ 
 header {
     height: 75px;
-    width: 100%;
 }
 
 /* CONTAINER & ITEM PROPERTIES */
 .container {
-    width: 100%;
-    height: 100vh;
+    height: 150vh;
     display: grid;
     gap: 10px;
     margin: 20px;
@@ -29,7 +27,6 @@ header {
 .item {
     overflow: hidden;
     position: relative;
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
