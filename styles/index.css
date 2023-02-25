@@ -1,5 +1,5 @@
-.parent1{
-max: width 100%;; 
+.parent {
+max-width:  100%;; 
 max-height: 100%;
 font-family: 'Poppins';
 font-style: normal;
@@ -11,73 +11,6 @@ padding:25px;
 color: #7BA376;
 background-color: #E0FFDC;
 flex-wrap: wrap;
-}
-.moon-img1 {
-width: 670px;
-height: 447px;
-left: 20px;
-top: 178px;  
-background: url(bluemoon.jpeg);
-border-radius: 35px;
-}
-
-.moon-img2 {
-width: 635px;
-height: 447px;
-left: 720px;
-top: 178px;
-background: url(eclipsemoon.jpeg);
-border-radius: 25px;
-}
-
-.moon-img3 {
-width: 700px;
-height: 481px;
-left: 20px;
-top: 655px;
-background: url(lunar-eclipse.jpeg);
-border-radius: 25px;
-}
-
-.moon-img4 {
-width: 646px;
-height: 604px;
-left: 745px;
-top: 655px;
-background: url(naturemoon.jpeg);
-border-radius: 25px;
-}
-
-.moon-img5 {
-width: 681px;
-height: 630px;
-left: 39px;
-top: 1165px;
-background: url(moon2.jpeg);
-border-radius: 25px;
-}
-
-.moon-img6 {
-width: 639px;
-height: 439px;
-left: 752px;
-top: 1289px;
-background: url(moon1.jpeg);
-border-radius: 25px;   
-}
-
-.parent2{
-max-width: 100%;
-max-height: 100%;   
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 100;
-font-size: 36px;
-line-height: 30px;
-margin: none;
-padding:none;
-color: #7BA376;
-background-color: #E0FFDC;
 }
 
 .nav{
@@ -91,18 +24,17 @@ font-weight: 100;
 font-size: 16px;
 line-height: 30px;
 background-color: #E0FFDC;
-
+    
 }
- 
+     
 .nav>li>a {   
 text-decoration:none;
 color: #7BA376;
 }
-
+    
 .nav>li {
 margin-left: 30px;
-}
-
+}  
 .logo_text {
 /* StarScape Studios */
 position: absolute;
@@ -110,21 +42,115 @@ width: 424px;
 height: 91px;
 left: 17px;
 top: 7px;
-background-color: #E0FFDC;
-
+background-color: #E0FFDC; 
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 700;
 font-size: 36px;
-line-height: 30px;
-
-
+line-height: 30px;    
 display: flex;
 align-items:flex-start;
-letter-spacing: 0.03em;
-
+letter-spacing: 0.03em;    
 color: #7BA376;
+}   
+.moon-img1 {
+width: 670px;
+height: 447px;
+left: 20px;
+top: 178px;  
+border-radius: 35px;
 }
+
+.moon-img2 {
+width: 635px;
+height: 447px;
+left: 720px;
+top: 178px;
+border-radius: 25px;
+}
+
+.moon-img3 {
+width: 700px;
+height: 481px;
+left: 20px;
+top: 655px;
+border-radius: 25px;
+}
+
+.moon-img4 {
+width: 646px;
+height: 604px;
+left: 745px;
+top: 655px;
+border-radius: 25px;
+}
+
+.moon-img5 {
+width: 681px;
+height: 630px;
+left: 39px;
+top: 1165px;
+border-radius: 25px;
+}
+
+.moon-img6 {
+width: 639px;
+height: 439px;
+left: 752px;
+top: 1289px;
+border-radius: 25px;   
+}
+
+.stars-img1 {
+width: 670px;
+height: 447px;
+left: 20px;
+top: 178px;  
+border-radius: 35px;
+}
+    
+.stars-img2 {
+width: 635px;
+height: 447px;
+left: 720px;
+top: 178px;
+border-radius: 25px;
+}
+    
+.stars-img3 {
+width: 700px;
+height: 481px;
+left: 20px;
+top: 655px;
+border-radius: 25px;
+}
+    
+.stars-img4 {
+width: 646px;
+height: 604px;
+left: 745px;
+top: 655px;
+border-radius: 25px;
+}   
+
+.stars-img5 {
+width: 681px;
+height: 630px;
+left: 39px;
+top: 1165px;
+border-radius: 25px;
+}
+    
+.stars-img6 {
+width: 639px;
+height: 439px;
+left: 752px;
+top: 1289px;
+border-radius: 25px;   
+}
+
+
+
 
 
   
