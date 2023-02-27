@@ -36,6 +36,7 @@ header {
 /* GALLERY */
 .gallery {
     display: flex;
+    justify-content: center;
 }
 
 .gallery__container {
@@ -43,14 +44,17 @@ header {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(13, auto);
     gap: 10px;
-    margin: 10px;
+    max-width: 1000px;
 }
 
 .gallery__image {
+    position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    transition: 0.3s ease;
+    z-index: 0;
 }
 
 .gallery__item--1 {
@@ -78,6 +82,12 @@ header {
 }
 
 /* HOVER EFFECT */
-img:hover {
-    transform: scale(1.5);
+.gallery__image:hover {
+    transform: scale(1.3);
+    z-index: 999;
+    cursor: pointer;
+}
+
+.gallery__container:hover .gallery__image:not(:hover) {
+    filter: blur(5px);
 }
