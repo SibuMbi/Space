@@ -100,7 +100,10 @@ header {
 .gallery__image--stars:hover,
 .gallery__image--planets:hover {
     transform: scale(1.5);
-    z-index: 1;
-    overflow: hidden;
     cursor: pointer;
 }
+
+.gallery__image--planets:active {
+    box-shadow: 10px 10px 5px #7BA376;
+}
+/* cannot style active state if link is in a div */
