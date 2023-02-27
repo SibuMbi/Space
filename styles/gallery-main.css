@@ -50,24 +50,35 @@ header {
 
 /* IMAGE LINKS */
 .gallery {
-    display: flex;
+    display: grid;
     margin: 10px;
     gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 360px;
 }
 
-.gallery__moon,
-.gallery__stars,
-.gallery__planets {
-    width: 33%;
-}
-
-.gallery img {
-    width: 100%;
-    height: 360px;
-    object-fit: cover;
+.gallery__image {
+    display: inline-block;
+    overflow: hidden;
     border-radius: 10px;
-    position: relative;
-    border: 1px solid black;
+}
+
+.gallery__image--moon {
+    background: center/cover url("../images/pexels-alex-andrews-1983032.jpg") no-repeat;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.gallery__image--stars {
+    background: center/cover url("../images/pexels-enric-cruz-lópez-6039245.jpg") no-repeat;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.gallery__image--planets {
+    background: center/cover url("../images/mars-11012.jpg") no-repeat;
+    height: 100%;
+    transition: all 0.7s ease;
 }
 
 .gallery figcaption {
@@ -82,4 +93,14 @@ header {
     position: absolute;
     top: 570px;
     margin-left: 20px;
+}
+
+/* LINK STYLE STATES */
+.gallery__image--moon:hover,
+.gallery__image--stars:hover,
+.gallery__image--planets:hover {
+    transform: scale(1.5);
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
 }

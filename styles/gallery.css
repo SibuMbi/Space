@@ -25,7 +25,6 @@ header {
 }
 
 .item {
-    overflow: hidden;
     position: relative;
     font-family: 'Poppins';
     font-style: normal;
