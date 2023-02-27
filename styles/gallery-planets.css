@@ -16,8 +16,8 @@ header {
 
 /* TEXT */
 .title {
-    width: 100%;
     display: flex;
+    min-height: 100px;
     justify-content: center;
 }
 
@@ -31,4 +31,53 @@ header {
     /* or 150% */
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+
+/* GALLERY */
+.gallery {
+    display: flex;
+}
+
+.gallery__container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(13, auto);
+    gap: 10px;
+    margin: 10px;
+}
+
+.gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery__item--1 {
+    grid-area: 1/1/4/2;
+}
+
+.gallery__item--2 {
+    grid-area: 1/2/7/3;
+}
+
+.gallery__item--3 {
+    grid-area: 4/1/9/2;
+}
+
+.gallery__item--4 {
+    grid-area: 7/2/11/3;
+}
+
+.gallery__item--5 {
+    grid-area: 9/1/14/2;
+}
+
+.gallery__item--6 {
+    grid-area: 11/2/14/3;
+}
+
+/* HOVER EFFECT */
+img:hover {
+    transform: scale(1.5);
 }
