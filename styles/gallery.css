@@ -99,6 +99,7 @@ header {
     cursor: pointer;
 }
 
-.item a:active {
+.item a:active >img {
     box-shadow: 0 0 10px #7BA376;
 }
+/* cant make active state work on img...*/

@@ -6,7 +6,6 @@
 
 body {
     background-color: #E0FFDC;
-    height: 150vh;
 }
 
 /* HEADER PLACEHOLDER */ 
@@ -17,8 +16,8 @@ header {
 /* TEXT */
 .title {
     display: flex;
-    min-height: 100px;
     justify-content: center;
+    min-height: 100px;
 }
 
 .title h2 {
@@ -43,8 +42,8 @@ header {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(13, auto);
-    gap: 10px;
-    max-width: 1000px;
+    gap: 3%;
+    max-width: 85%;
 }
 
 .gallery__image {
@@ -97,10 +96,12 @@ header {
 .caption  {
     position: absolute;
     z-index: 3;
+    max-width: 95%;
+    min-height: 15%;
     bottom: 0;
-    margin-bottom: 15px;
-    margin-left: 15px;
+    margin-left: 2%;
     opacity: 0;
+    background-color: rgba(0, 0, 0, 0.6);
 
     font-family: 'Poppins';
     font-style: normal;
