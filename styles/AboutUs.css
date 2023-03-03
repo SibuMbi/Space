@@ -99,7 +99,7 @@
 
 .AboutUs-title{
     font-weight: 800;
-    font-size: 47px;
+    font-size: 37px;
     line-height: 10px;
     display: flex;
     align-items: center;
@@ -118,10 +118,11 @@
     letter-spacing: 0.03em;
     text-align: left;
     color: #7BA376;
+    margin-top: -20px;
 }
 
 .aboutusimg{
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 /* footer */
