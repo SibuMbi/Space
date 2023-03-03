@@ -106,7 +106,6 @@
     align-items: center;
     letter-spacing: 0.03em;
     backdrop-filter: blur(2px);
-    margin-top: 20px;
 }
 
 .AboutUs-paragraph{
@@ -126,3 +125,29 @@
 .aboutusimg{
     border-radius: 30px;
 }
+
+/* footer */
+footer{
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-line{
+    border: 2px solid #7BA376;
+    width: 80%;
+}
+
+.footer__social {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+}
+
+.fa-brands {
+    color: #7BA376;
+}
+
