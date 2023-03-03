@@ -100,7 +100,7 @@
 .AboutUs-title{
     font-weight: 800;
     font-size: 47px;
-    line-height: 50px;
+    line-height: 10px;
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
@@ -114,11 +114,10 @@
     flex-direction: column;
     font-size: 17px;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 35px;
     letter-spacing: 0.03em;
     text-align: left;
     color: #7BA376;
-    max-width: 591px;
 }
 
 .aboutusimg{
