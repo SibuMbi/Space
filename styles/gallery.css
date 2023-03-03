@@ -85,10 +85,10 @@ body {
     height: 100vh;
     max-width: 95%;
     display: grid;
-    gap: 1%;
+    gap: 3%;
     margin: auto;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr 4fr 1fr;
+    grid-template-rows: 2fr 4fr;
 }
 
 .item {
