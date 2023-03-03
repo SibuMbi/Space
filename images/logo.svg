@@ -1,0 +1,5 @@
+<svg width="640" height="360" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="logo" viewbox="0 0 640 360">
+        <circle cx="320" cy="180" r="160" stroke-width="30" fill="#7BA376" stroke="#7BA376" />
+        <ellipse cx="320" cy="180" rx="320" ry="40" stroke-width="30" fill="none" stroke="#7BA376" transform="rotate(-20 320 180)" />
+</svg>
