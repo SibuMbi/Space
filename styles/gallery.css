@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   /* border: 2px solid black;*/
+   /* border: 2px solid black; */
 }
 
 .contacts__navigation__title {
@@ -76,7 +76,7 @@ body {
 
 .list-link:active {
     filter: saturate(3);
-    text-decoration: green underline;
+    text-decoration: underline;
 }
 
 
@@ -168,3 +168,45 @@ body {
     box-shadow: 0 0 10px #7BA376;
 }
 /* cant make active state work on img...*/
+
+
+/*FOOTER*/
+footer{
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-line{
+    border: 2px solid #7BA376;
+    width: 80%;
+}
+
+.footer__social {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+}
+
+.fa-brands {
+    color: #7BA376;
+}
+
+/* logo animation */
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}
+
+svg {
+    animation: rotate 10s linear infinite;
+    max-width: 80px;
+    height: 100%;
+    margin-left: 20%;
+}

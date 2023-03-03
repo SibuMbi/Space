@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/12e82f9592.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/gallery.css">
     <title>Gallery</title>
@@ -18,9 +19,11 @@
     <nav class="contacts__navigation">
         <h1 class="contacts__navigation__title">
             <a class="title-link" href="#">StarScape Studios</a>
-            <svg width="640" height="360" viewbox="0 0 640 360">
-                <use href="../images/logo.svg#logo"></use>
-            </svg>
+            <div class="svg">
+                <svg width="520" height="360" viewbox="0 0 700 360">
+                    <use href="../images/logo.svg#logo"></use>
+                </svg>
+            </div>
         </h1>
         <ul class="contacts__navigation__list">
             <li><a class="list-link" href="#">About Us</a></li>
@@ -64,5 +67,18 @@
             </div>
         </div>
     </main>
+
+    <!-- Footer --> 
+    <footer class="footer">
+        <hr class="footer-line" />
+        <div class="footer__social">
+            <a class="footer__social-fb-link" href="#">
+                <i class="fa-brands fa-facebook fa-2xl"></i>
+            </a> 
+            <a class="footer__social-insta-link" href="#">
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
