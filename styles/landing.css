@@ -70,10 +70,11 @@
     border-radius: 20px;
 }
 
+/*
 .list-link-active{
     filter: saturate(3);
     text-decoration: green wavy underline;
-}
+}*/
 
 .image-content{
     position: relative;
