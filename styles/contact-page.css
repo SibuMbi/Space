@@ -104,9 +104,9 @@ body{
 }
 
 .list-link-active{
-    color: #F2A574;
-    -webkit-text-decoration: #F2A574 underline;
-            text-decoration: #F2A574 underline;
+    color: #7BA376;
+    -webkit-text-decoration: #7BA376 underline;
+            text-decoration: #7BA376 underline;
     text-underline-offset: 8px;
 }
 
