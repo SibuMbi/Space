@@ -8,15 +8,13 @@ body {
     background-color: #E0FFDC;
     max-width: 1440px;
     width: 100%;
+    height: 100vh;
     margin: auto;
-    /* min-height: 100vh;
-    display: flex;
-    flex-direction: column; */
 }
 
 /* navbar */
 .contacts__navigation {
-    max-height: 15%;
+    max-height: 15vh;
     max-width: 95%;
     width: 100%;
     margin: auto;
@@ -36,7 +34,7 @@ body {
     line-height: 30px;
     letter-spacing: 0.03em;
     color: #7BA376;
-   /* border: 2px darkblue solid;*/
+   /* border: 2px darkblue solid; */
     display: flex;
     align-items: center;
 }
@@ -47,7 +45,7 @@ body {
 }
 
 .contacts__navigation__list {
-    max-width: 35%;
+    max-width: 55%;
     width: 100%; 
     display: flex;
     flex-direction: row;
@@ -60,13 +58,14 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: #7BA376;
-    justify-content: space-between;
+    justify-content: flex-end;
     list-style: none;
 }
 
 .list-link {
     color: #7BA376;
     text-decoration: none; 
+    padding-left: 15px; 
 }
 
 .list-link:hover {
@@ -84,8 +83,12 @@ body {
     text-underline-offset: 8px;
 }
 
-/* main */
+.list-icon {
+    color: #7BA376;
+    display: none;
+}
 
+/* main */
 .gallery {
     display: flex;
     flex-direction: column;
@@ -94,6 +97,19 @@ body {
 
 .title {
 min-height: 15vh;
+}
+
+.title h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    color: #7BA376;
+    font-size: 40px;
+    line-height: 60px;
+    /* or 150% */
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /* grid container & item properties */
@@ -108,21 +124,6 @@ min-height: 15vh;
 
 .gallery__item {
     border-radius: 10px;
-}
-
-/* item - text */
-.title h2 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    color: #7BA376;
-    font-size: 40px;
-    line-height: 60px;
-    /* or 150% */
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: center;
-
 }
 
 /* item - images */
@@ -176,9 +177,6 @@ min-height: 15vh;
 .caption  {
     position: absolute;
     z-index: 3;
-    max-width: 95%;
-    min-height: 15%;
-    width: 100%;
     bottom: 0;
     margin-left: 2%;
     opacity: 0;
@@ -200,10 +198,11 @@ min-height: 15vh;
 
 /* footer */
 .footer {
-    min-height: 20vh;
+    min-height: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .footer-line {
@@ -218,9 +217,80 @@ min-height: 15vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin: auto;
+    margin-top: 3%;
 }
 
 .fa-brands {
     color: #7BA376;
+}
+
+.fa-facebook, .fa-instagram {
+    font-size: 36px;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 768px;
+    }
+
+    .contacts__navigation__title {
+        font-size: 30px;
+        line-height: 24px;
+    }
+
+    .contacts__navigation__list {
+        font-size: 2.5vw;
+        line-height: 3vw;
+    }
+
+    .title {
+        min-height: 10vh;
+    }
+
+    .title h2 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .fa-facebook, .fa-instagram {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    body {
+        max-width: 360px;
+    }
+
+    .contacts__navigation__title {
+        font-size: 22px;
+        line-height: 18px;
+    }
+
+    .list-link {
+        display: none;
+    }
+
+    .list-icon {
+        display: contents;
+        font-size: 18px;
+    }
+
+    .title {
+        min-height: 8vh;
+    }
+
+    .title h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .caption  {
+        display: none;
+    }
+
+    .fa-facebook, .fa-instagram {
+        font-size: 18px;
+    }
 }
