@@ -8,13 +8,13 @@ body {
     background-color: #E0FFDC;
     max-width: 1440px;
     width: 100%;
-    min-height: 810px;
+    height: 100vh;
     margin: auto;
 }
 
 /* navbar */
 .contacts__navigation {
-    max-height: 15%;
+    max-height: 15vh;
     max-width: 95%;
     width: 100%;
     margin: auto;
@@ -45,26 +45,28 @@ body {
 }
 
 .contacts__navigation__list {
-    max-width: 40%;
+    max-width: 55%;
     width: 100%; 
     display: flex;
     flex-direction: row;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 2vw;
-    line-height: 3vw;
+    font-size: 24px;
+    line-height: 50px;
     align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
     color: #7BA376;
-    justify-content: space-between;
+    justify-content: flex-end;
     list-style: none;
+    
 }
 
 .list-link {
     color: #7BA376;
     text-decoration: none; 
+    padding-left: 15px;
 }
 
 .list-link:hover {
@@ -82,7 +84,10 @@ body {
     text-underline-offset: 8px;
 }
 
-
+.list-icon {
+    color: #7BA376;
+    display: none;
+}
 /* grid container & item properties */
 .container {
     max-width: 95%;
@@ -194,6 +199,10 @@ body {
     color: #7BA376;
 }
 
+.fa-facebook, .fa-instagram {
+    font-size: 36px;
+}
+
 /* logo animation */
 @keyframes rotate {
     0% {transform: rotate(0deg);}
@@ -211,7 +220,16 @@ svg {
 @media screen and (max-width: 768px) {
     body {
         max-width: 768px;
-        min-height: 1024px;
+    }
+
+    .contacts__navigation__title {
+        font-size: 30px;
+        line-height: 24px;
+    }
+
+    .contacts__navigation__list {
+        font-size: 2.5vw;
+        line-height: 3vw;
     }
 
     .container {
@@ -240,6 +258,10 @@ svg {
         font-size: 36px;
         line-height: 50px;
     }
+
+    .fa-facebook, .fa-instagram {
+        font-size: 24px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -247,4 +269,26 @@ svg {
         max-width: 360px;
     }
 
+    .contacts__navigation__title {
+        font-size: 22px;
+        line-height: 18px;
+    }
+
+    .list-link {
+        display: none;
+    }
+
+    .list-icon {
+        display: contents;
+        font-size: 18px;
+    }
+
+    .text h2 {
+        font-size: 24px;
+        line-height: 42px;
+    }
+
+    .fa-facebook, .fa-instagram {
+        font-size: 18px;
+    }
 }
