@@ -32,8 +32,8 @@ body {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 2.25em;
-    line-height: 1.0em;
+    font-size: 36px;
+    line-height: 30px;
     letter-spacing: 0.03em;
     color: #7BA376;
    /* border: 2px darkblue solid;*/
@@ -54,8 +54,8 @@ body {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 1.5em;
-    line-height: 0.5em;
+    font-size: 24px;
+    line-height: 50px;
     align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
@@ -116,8 +116,8 @@ min-height: 15vh;
     font-style: normal;
     font-weight: 700;
     color: #7BA376;
-    font-size: 2.5em;
-    line-height: 2.0em;
+    font-size: 40px;
+    line-height: 60px;
     /* or 150% */
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -187,8 +187,8 @@ min-height: 15vh;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 1.0em;
-    line-height: 1.5em;
+    font-size: 16px;
+    line-height: 25px;
     /* or 156% */
     letter-spacing: 0.03em;
     color: #7BA376;
