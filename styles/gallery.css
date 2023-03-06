@@ -26,8 +26,8 @@ body {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 30px;
+    font-size: 2.25em;
+    line-height: 1.0em;
     letter-spacing: 0.03em;
     color: #7BA376;
    /* border: 2px darkblue solid;*/
@@ -48,8 +48,8 @@ body {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 50px;
+    font-size: 1.5em;
+    line-height: 0.5em;
     align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
@@ -93,10 +93,6 @@ body {
 
 .item {
     position: relative;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    color: #7BA376;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -105,19 +101,22 @@ body {
 .text {
     grid-area: 1/2/2/3;
     align-self: center;
-    overflow: hidden;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    color: #7BA376;
 }
 
 .text h2 {
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 2.5em;
+    line-height: 2.0em;
     /* or 150% */
     letter-spacing: 0.03em;
 }
 
 .text p {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 0.75em;
+    line-height: 1.25em;
     /* or 100% */
     letter-spacing: 0.03em;
 }
@@ -147,8 +146,8 @@ body {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 60px;
+    font-size: 1.25em;
+    line-height: 3.0em;
     /* or 300% */
     color: #7BA376;
     text-transform: uppercase;
@@ -171,24 +170,25 @@ body {
 
 
 /* footer */
-footer{
-    margin-top: 150px;
+.footer {
     width: 100%;
+    min-height: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.footer-line{
+.footer-line {
     border: 2px solid #7BA376;
     width: 80%;
+    margin-top: 5%;
 }
 
 .footer__social {
     width: 20%;
     display: flex;
     justify-content: space-around;
-    margin: 30px auto;
+    margin: auto;
 }
 
 .fa-brands {
@@ -198,9 +198,6 @@ footer{
 /* logo animation */
 @keyframes rotate {
     0% {transform: rotate(0deg);}
-    25% {transform: rotate(90deg);}
-    50% {transform: rotate(180deg);}
-    75% {transform: rotate(270deg);}
     100% {transform: rotate(360deg);}
 }
 
