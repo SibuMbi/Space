@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/12e82f9592.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/contact-page.css" />
     <title>Contacts</title>
   </head>
@@ -17,9 +18,13 @@
         <a class="title-link" href="../index.html">StarScape Studios</a>
       </h1>
       <ul class="contacts__navigation__list">
-        <li><a class="list-link" href="./pages/AboutUs.html">About Us</a></li>
-        <li><a class="list-link" href="./pages/gallery.html">Gallery</a></li>
-        <li><a class="list-link list-link-active" href="./contact-page.html">Contact Us</a></li>
+        <li><a class="list-link" href="./AboutUs.html">About Us</a></li>
+        <li><a class="list-link" href="./gallery-planets.html">Gallery</a></li>
+        <li>
+          <a class="list-link list-link-active" href="./contact-page.html"
+            >Contact Us</a
+          >
+        </li>
       </ul>
     </nav>
     <main>
@@ -29,8 +34,7 @@
           StarScape Studios is represented by Sundsgården Folkhögskola
         </p>
         <p class="main__contact__text">
-          Email: info@starscapestudios.com
-          Phone: 123-456-7890
+          Email: info@starscapestudios.com Phone: 123-456-7890
         </p>
       </div>
       <form class="main__form" autocomplete="off">
@@ -58,7 +62,6 @@
             class="input-field"
             placeholder="Email"
             required
-          
           />
 
           <input
@@ -81,27 +84,29 @@
           ></textarea>
         </div>
         <div class="main__btn">
-          
-            <button type="submit" class="main__btn-btn"><a class="main__btn-link" href="#">SUBMIT</a></button>
-        
+          <button type="submit" class="main__btn-btn">
+            <a class="main__btn-link" href="#">SUBMIT</a>
+          </button>
         </div>
       </form>
     </main>
     <footer class="footer">
       <hr class="footer-line" />
       <div class="footer__social">
-        <a class="footer__social-fb-link" href="#"><img
+        <!-- <a class="footer__social-fb-link" href="#"><img
           class="footer__social-fb"
           src="../images/Facebook.svg"
           alt="Facebook"
-        /></a> 
-        <a class="footer__social-insta-link" href="#">
+        /></a>  -->
+        <i class="fa-brands fa-facebook fa-2xl"></i>
+        <!-- <a class="footer__social-insta-link" href="#">
         <img
           class="footer__social-insta"
           src="../images/Instagram.svg"
           alt="Instagram"
         />
-    </a>
+    </a> -->
+        <i class="fa-brands fa-instagram fa-2xl"></i>
       </div>
     </footer>
   </body>

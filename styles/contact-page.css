@@ -355,7 +355,7 @@ footer{
    /* border: 2px solid firebrick;*/
 }
 
-.footer__social-insta-link{
+/* .footer__social-insta-link{
     border-radius: 20px;
 }
 
@@ -364,5 +364,14 @@ footer{
     -webkit-filter: saturate(2);
     filter: saturate(2);
 }
+ */
 
+ .fa-brands {
+    color: #7BA376;
+}
+
+.fa-brands:hover{
+    -webkit-filter: saturate(2);
+    filter: saturate(2);
+}
 
