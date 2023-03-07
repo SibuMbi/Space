@@ -65,7 +65,7 @@ body {
 .list-link {
     color: #7BA376;
     text-decoration: none; 
-    padding-left: 15px; 
+    padding-left: 2.5vw; 
 }
 
 .list-link:hover {
@@ -206,7 +206,7 @@ min-height: 15vh;
 }
 
 .footer-line {
-    border: 2px solid #7BA376;
+    border: 0.2vw solid #7BA376;
     max-width: 80%;
     width: 100%;
     margin-top: 5%;
@@ -289,7 +289,7 @@ min-height: 15vh;
     .caption  {
         display: none;
     }
-
+    
     .fa-facebook, .fa-instagram {
         font-size: 18px;
     }
