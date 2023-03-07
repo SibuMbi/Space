@@ -89,8 +89,6 @@ body {
 }
 
 .list-link:hover {
-    width: 13%;
-    height: 7%;
     padding: 0.8vw;
     background: #FFFFFF;
     opacity: 0.8;

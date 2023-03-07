@@ -80,8 +80,6 @@ body {
 }
 
 .list-link:hover {
-    width: 13%;
-    height: 7%;
     padding: 0.8vw;
     background: #FFFFFF;
     opacity: 0.8;
@@ -295,19 +293,6 @@ body {
 .fa-facebook, .fa-instagram {
     font-size: 36px;
 }
-
-/* logo animation */
-/* @keyframes rotate {
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
-}
-
-svg {
-    animation: rotate 10s linear infinite;
-    max-width: 3.0em;
-    height: 100%;
-    margin-left: 20%;
-} */
 
 /* media queries */
 @media screen and (max-width: 768px) {
