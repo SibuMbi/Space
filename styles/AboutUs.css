@@ -174,10 +174,10 @@
 }
 
 .aboutusimg{
-    max-width: 100%;
+    width: 100%;
     border-radius: 20px;
-    object-fit: cover;
     height: 60vh;
+    object-fit: cover;
 }
 
 /* footer */
