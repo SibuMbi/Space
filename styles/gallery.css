@@ -118,8 +118,16 @@ body {
     text-underline-offset: 0.5rem /*8px*/;
 }
 
-.list-icon {
+/* .list-icon {
     color: #7BA376;
+    display: none;
+} */
+
+.open_bars {
+    display: none;
+}
+
+.overlay {
     display: none;
 }
 
@@ -404,6 +412,73 @@ body {
     }
 }
 
+/* responsive navbar */
+@media screen and (max-width: 768px){
+    .contacts_nav{
+        display: none;
+    }
+
+    .overlay {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2; 
+        left: 0;
+        top: 0;
+        background-color: #E0FFDC; 
+        opacity: 0.9; 
+        overflow-x: hidden; 
+        transition: 0.5s; 
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%; 
+        width: 100%; 
+        text-align: center; 
+        margin-top: 30px; 
+        /* border: 2px solid red; */
+    }
+      
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #7BA376;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 3.125rem; /*50px;*/
+        display: block; 
+        transition: 0.3s; 
+    }
+
+    .overlay a:hover, .overlay a:focus {
+        color: #808080;
+    }
+     
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+    .fa-bars{
+        font-size: 30px;
+        color:#7BA376;
+        display: block;
+    }
+    
+    .open_bars{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 360px) {
     .contacts__navigation__title {
         font-size: 22px;
@@ -415,6 +490,10 @@ body {
         line-height: 40px;
     }
 
+    .text p {
+        font-weight: 400;
+    }
+
     .footer {
         position: fixed;
         bottom: 0;
@@ -423,5 +502,9 @@ body {
 
     .fa-facebook, .fa-instagram {
         font-size: 18px;
+    }
+
+    .fa-bars {
+        font-size: 24px;
     }
 }
