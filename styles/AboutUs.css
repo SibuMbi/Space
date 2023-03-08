@@ -9,13 +9,21 @@
 }
 
 .contacts__navigation{
-    max-height: 15vh;
+    max-height: 20vh; /* 132px */
+    height: 100%;
     max-width: 95%;
     width: 100%;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
    /* border: 2px solid black;*/
 }
 
@@ -23,8 +31,8 @@
     max-width: 20%;
     width: 100%;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 30px;
+    font-size: 2.25rem; /*36px;*/
+    line-height: 1.875rem; /*30px;*/
     letter-spacing: 0.03em;
     color: #7BA376;
    /* border: 2px darkblue solid;*/
@@ -37,36 +45,57 @@
     text-decoration: none;
 }
 
-.contacts__navigation__list{
-    max-width: 490px;
+.contacts_nav{
+    max-width: 30.625rem; /*490px;*/
     width: 100%; 
-    display: flex;
-    flex-direction: row;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 50px;
-    align-items: center;
+    font-size: 1.5rem; /*24px;*/
+    line-height: 3.125rem; /*50px;*/
     text-align: center;
     letter-spacing: 0.03em;
     color: #7BA376;
+    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
+}
+
+.contacts__navigation__list{
+    width: 100%;
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-evenly;
     list-style: none;
 }
 
 .list-link{
     color: #7BA376;
     text-decoration: none; 
-    padding-left: 2.75vw;
 }
 
 .list-link:hover{
-    padding: 0.8vw;
+    width: 11.625rem; /*186px;*/
+    height: 4.375rem; /*70px;*/
+    padding: 0.625rem; /*10px;*/
     background: #FFFFFF;
     opacity: 0.8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    -webkit-box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25), 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25), 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    border-radius: 1.25rem /*20px*/;
+}
+
+.list-icon {
+    color: #7BA376;
+    display: none;
 }
 
 /*
@@ -83,10 +112,12 @@
     justify-content: center;
     align-items: center;    
     flex-direction: row;
+    margin: 5vh auto auto auto;
 }
 
 .image-container{
-    margin-right: 40px;
+    width: 40%;
+    margin-right: 3%;
 }
 
 .title-paragraph{
@@ -94,6 +125,7 @@
     flex-direction: column;
     text-align: center;
     align-content: center;
+    width: 35%;
 }
 
 .AboutUs-title{
@@ -123,6 +155,8 @@
 .aboutusimg{
     max-width: 100%;
     border-radius: 20px;
+    object-fit: cover;
+    height: 60vh;
 }
 
 /* footer */
@@ -148,4 +182,88 @@ footer{
 
 .fa-brands {
     color: #7BA376;
+}
+
+@media screen and (max-width: 800px) {
+    .contacts__navigation__title {
+        font-size: 30px;
+        line-height: 24px;
+    }
+
+    .contacts__navigation__list {
+        font-size: 2.5vw;
+        line-height: 3vw;
+    }
+
+    .AboutUs-title{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    
+    .AboutUs-paragraph{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .footer {
+        min-height: 15%;
+        margin: auto;
+    }
+
+    .fa-facebook, .fa-instagram {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .contacts__navigation__title {
+        font-size: 22px;
+        line-height: 20px;
+    }
+
+    .list-link {
+        display: none;
+    }
+
+    .list-icon {
+        display: contents;
+        font-size: 18px;
+    }
+
+    .AboutUs-container{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .image-container{
+        width: 95%;
+        margin: auto;
+    }
+
+    .aboutusimg{
+        height: 40vh;
+        width: 95%;
+    }
+
+    .title-paragraph{
+        width: 95%;
+        margin: auto;
+    }
+
+    .AboutUs-title{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 10px;
+    }
+    
+    .AboutUs-paragraph{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .fa-facebook, .fa-instagram {
+        font-size: 18px;
+    }
 }
