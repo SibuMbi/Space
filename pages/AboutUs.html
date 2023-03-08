@@ -8,24 +8,39 @@
     <link rel="stylesheet" href="../styles/AboutUs.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/12e82f9592.js" crossorigin="anonymous"></script>
+    <script src="/styles/index.js"></script>
     <title>About us</title>
 </head>
 <body class="body">
   
-          <!-- Header -->
+    <!-- Header -->
     <nav class="contacts__navigation">
         <h1 class="contacts__navigation__title">
           <a class="title-link" href="/index.html">StarScape Studios</a>
         </h1>
+
+        <span class="open_bars" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+
         <div class="contacts_nav">
           <ul class="contacts__navigation__list">
             <li><a class="list-link list-link-active" href="/pages/AboutUs.html">About Us</a></li>
             <li><a class="list-link" href="/pages/gallery.html">Gallery</a></li>
             <li><a class="list-link" href="/pages/contact-page.html">Contact Us</a></li>
-            <li><a class="list-icon" href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <!-- <li><a class="list-icon" href="#"><i class="fa-solid fa-bars"></i></a></li> -->
           </ul>
         </div>
       </nav>
+
+       <!-- Responsive nav bar -->
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="/index.html">StarScape Studio</a>
+          <a href="/pages/AboutUs.html">About Us</a>
+          <a href="/pages/gallery.html">Gallery</a>
+          <a href="/pages/contact-page.html">Contact Us</a>
+        </div>
+      </div>
 
       <!-- Main Section -->
       <main>

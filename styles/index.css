@@ -268,21 +268,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 360px) {
-    .contacts__navigation__title {
-        font-size: 30px;
-        line-height: 25px;
-    }
-
-    .landing-title{
-        font-size: 20px;
-    }
-
-    .fa-facebook, .fa-instagram {
-        font-size: 18px;
-    }
-}
-
+/* responsive navbar */
 @media screen and (max-width: 768px){
     .contacts_nav{
         display: none;
@@ -301,7 +287,6 @@ footer{
         overflow-x: hidden; 
         transition: 0.5s; 
     }
-      
 
     .overlay-content {
         position: relative;
@@ -311,7 +296,6 @@ footer{
         margin-top: 30px; 
         /* border: 2px solid red; */
     }
-      
       
     .overlay a {
         padding: 8px;
@@ -326,12 +310,10 @@ footer{
         display: block; 
         transition: 0.3s; 
     }
-      
 
     .overlay a:hover, .overlay a:focus {
         color: #808080;
     }
-      
      
     .overlay .closebtn {
         position: absolute;
@@ -344,7 +326,6 @@ footer{
         font-size: 30px;
         color:#7BA376;
         display: block;
-
     }
     
     .open_bars{
@@ -353,5 +334,22 @@ footer{
         justify-content: center;
     }
 }
-    
+
+@media screen and (max-width: 360px) {
+    .contacts__navigation__title {
+        font-size: 30px;
+        line-height: 25px;
+    }
+
+    .landing-title{
+        font-size: 20px;
+    }
+
+    .fa-facebook, .fa-instagram {
+        font-size: 18px;
+    }
+
+    .fa-bars {
+        font-size: 24px;
+    }
 }
