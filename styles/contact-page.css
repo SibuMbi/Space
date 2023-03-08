@@ -21,7 +21,7 @@ body{
 .contacts__navigation{
     max-height: 8.25rem; /* 132px */
     height: 100%;
-    width: 100%;
+    width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
