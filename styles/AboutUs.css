@@ -9,7 +9,7 @@
 }
 
 .contacts__navigation{
-    max-height: 20vh; /* 132px */
+    max-height: 15vh;
     height: 100%;
     max-width: 95%;
     width: 100%;
@@ -36,8 +36,12 @@
     letter-spacing: 0.03em;
     color: #7BA376;
    /* border: 2px darkblue solid;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
 }
 
 .title-link{
@@ -193,15 +197,14 @@ footer{
     color: #7BA376;
 }
 
-@media screen and (max-width: 800px) {
-    .contacts__navigation__title {
-        font-size: 30px;
-        line-height: 24px;
+@media screen and (max-width: 768px) {
+    .list-link {
+        display: none;
     }
 
-    .contacts__navigation__list {
-        font-size: 2.5vw;
-        line-height: 3vw;
+    .list-icon {
+        display: contents;
+        font-size: 18px;
     }
 
     .AboutUs-title{
@@ -229,15 +232,6 @@ footer{
     .contacts__navigation__title {
         font-size: 22px;
         line-height: 20px;
-    }
-
-    .list-link {
-        display: none;
-    }
-
-    .list-icon {
-        display: contents;
-        font-size: 18px;
     }
 
     .AboutUs-container{

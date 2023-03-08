@@ -36,8 +36,8 @@ body {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 30px;
+    font-size: 2.25rem; /*36px;*/
+    line-height: 1.875rem; /*30px;*/
     letter-spacing: 0.03em;
     color: #7BA376;
    /* border: 2px darkblue solid; */
@@ -321,16 +321,6 @@ body {
 
 /* media queries */
 @media screen and (max-width: 768px) {
-    .contacts__navigation__title {
-        font-size: 30px;
-        line-height: 24px;
-    }
-
-    .contacts__navigation__list {
-        font-size: 2.5vw;
-        line-height: 3vw;
-    }
-
     .list-link {
         display: none;
     }
@@ -406,6 +396,7 @@ body {
 
     .footer {
         min-height: 15%;
+        margin: auto;
     }
 
     .fa-facebook, .fa-instagram {

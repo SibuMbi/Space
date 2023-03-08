@@ -36,8 +36,8 @@ body {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 30px;
+    font-size: 2.25rem; /*36px;*/
+    line-height: 1.875rem; /*30px;*/
     letter-spacing: 0.03em;
     color: #7BA376;
     /* border: 2px darkblue solid;*/
