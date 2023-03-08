@@ -119,8 +119,16 @@ body {
     text-underline-offset: 0.5rem /*8px*/;
 }
 
-.list-icon {
+/* .list-icon {
     color: #7BA376;
+    display: none;
+} */
+
+.open_bars {
+    display: none;
+}
+
+.overlay {
     display: none;
 }
 
@@ -432,6 +440,84 @@ footer{
     }
 }
 
+/* responsive navbar */
+@media screen and (max-width: 768px){
+    .contacts_nav{
+        display: none;
+    }
+
+    .overlay {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2; 
+        left: 0;
+        top: 0;
+        background-color: #E0FFDC; 
+        opacity: 0.9; 
+        overflow-x: hidden; 
+        -webkit-transition: 0.5s; 
+        -o-transition: 0.5s; 
+        transition: 0.5s; 
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%; 
+        width: 100%; 
+        text-align: center; 
+        margin-top: 30px; 
+        /* border: 2px solid red; */
+    }
+      
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #7BA376;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 3.125rem; /*50px;*/
+        display: block; 
+        -webkit-transition: 0.3s; 
+        -o-transition: 0.3s; 
+        transition: 0.3s; 
+    }
+
+    .overlay a:hover, .overlay a:focus {
+        color: #808080;
+    }
+     
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+    .fa-bars{
+        font-size: 30px;
+        color:#7BA376;
+        display: block;
+    }
+    
+    .open_bars{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+}
+
 @media screen and (max-width: 360px) {
     .contacts__navigation__title {
         font-size: 22px;
@@ -453,5 +539,9 @@ footer{
     
     .fa-facebook, .fa-instagram {
         font-size: 18px;
+    }
+    
+    .fa-bars {
+        font-size: 24px;
     }
 }
