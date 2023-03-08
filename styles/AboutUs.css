@@ -216,7 +216,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
     .contacts__navigation__title {
         font-size: 22px;
         line-height: 20px;
