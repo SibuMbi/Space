@@ -107,12 +107,12 @@
     display: none;
 }
 
-/*
 .list-link-active{
-    filter: saturate(3);
-    text-decoration: green wavy underline;
-}*/
-
+    color: #7BA376;
+    -webkit-text-decoration: #7BA376 underline;
+            text-decoration: #7BA376 underline;
+    text-underline-offset: 0.5rem /*8px*/;
+}
 
 /*main section*/
 
