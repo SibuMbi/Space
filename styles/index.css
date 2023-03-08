@@ -129,8 +129,16 @@ svg {
     text-decoration: green wavy underline;
 }*/
 
-.list-icon {
+/* .list-icon {
     color: #7BA376;
+    display: none;
+} */
+
+.open_bars {
+    display: none;
+}
+
+.overlay {
     display: none;
 }
 
@@ -225,7 +233,7 @@ footer{
     font-size: 36px;
 }
 
-@media screen and (max-width: 970px) {
+/* @media screen and (max-width: 970px) {
     .list-link {
         display: none;
     }
@@ -235,7 +243,7 @@ footer{
         font-size: 1em;
         color: #7BA376;
     }
-}
+} */
 
 @media screen and (max-width: 768px) {
     .footer {
@@ -273,4 +281,76 @@ footer{
     .fa-facebook, .fa-instagram {
         font-size: 18px;
     }
+}
+
+@media screen and (max-width: 768px){
+    .contacts_nav{
+        display: none;
+    }
+    .overlay {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        background-color: #E0FFDC; 
+        opacity: 0.9; 
+        overflow-x: hidden; 
+        transition: 0.5s; 
+      }
+      
+
+      .overlay-content {
+        position: relative;
+        top: 25%; 
+        width: 100%; 
+        text-align: center; 
+        margin-top: 30px; 
+        /* border: 2px solid red; */
+      }
+      
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #7BA376;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 3.125rem; /*50px;*/
+        display: block; 
+        transition: 0.3s; 
+      }
+      
+
+      .overlay a:hover, .overlay a:focus {
+        color: #808080;
+      }
+      
+     
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+
+    .fa-bars{
+        font-size: 30px;
+        color:#7BA376;
+        display: block;
+
+    }
+    
+    .open_bars{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+    
 }
